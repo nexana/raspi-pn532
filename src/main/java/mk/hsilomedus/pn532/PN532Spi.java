@@ -23,7 +23,7 @@ public class PN532Spi implements IPN532Interface {
 	
 	private byte command;
 	
-	private boolean debug = false;
+	private boolean debug = true;
 
 	@Override
 	public void begin() {
