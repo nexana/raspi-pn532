@@ -173,7 +173,7 @@ public class PN532Spi implements IPN532Interface {
 	@Override
 	public int readResponse(byte[] buffer, int expectedLength)
 			throws InterruptedException {
-		return readResponse(buffer, expectedLength, 1000);
+		return readResponse(buffer, expectedLength, 5000);
 	}
 
 	private CommandStatus waitForAck(int timeout) throws InterruptedException {
