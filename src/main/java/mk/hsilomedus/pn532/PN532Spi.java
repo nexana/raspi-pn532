@@ -18,7 +18,7 @@ public class PN532Spi implements IPN532Interface {
 	static final int LOW = 0;
 	static final int HIGH = 1;
 
-	static final int _cs = 10;
+	static final int _cs = 18;
 	static final int rst = 0;
 	
 	private byte command;
