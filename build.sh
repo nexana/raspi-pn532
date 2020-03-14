@@ -8,6 +8,6 @@ mkdir mantarget
 echo Copy libs
 cp ./lib/*.jar ./mantarget
 echo Compile
-javac -cp lib/pi4j-core.jar -d mantarget ./src/main/java/mk/hsilomedus/pn532/*.java
+javac -cp lib/pi4j-core.jar -d mantarget ./src/main/java/mk/hsilomedus/pn532/*.java ./src/main/java/be/nexana/badgesystem/*.java
 echo Done!
 echo ----------------------------------------------------------------------
