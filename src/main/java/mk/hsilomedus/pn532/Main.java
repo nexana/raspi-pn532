@@ -15,7 +15,7 @@ public class Main {
         // Start
         System.out.println("Starting up...");
         nfc.begin();
-        ledController.setup();
+//        ledController.setup();
         Thread.sleep(1000);
 
         long versiondata = nfc.getFirmwareVersion();
@@ -54,7 +54,7 @@ public class Main {
                     System.out.print(Integer.toHexString(buffer[i]));
                 }
                 System.out.println("]");
-                ledController.blueLed();
+//                ledController.blueLed();
 
             }
 
