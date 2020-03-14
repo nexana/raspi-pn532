@@ -31,11 +31,14 @@ public class PN532Spi implements IPN532Interface {
 
 		int j = Gpio.wiringPiSetup();
 		log("Wiringpisetup is " + j);
+		log("CS pin is " + _cs);
+		log("SPI channel is " + SPICHANNEL);
 		int fd = Spi.wiringPiSPISetup(SPICHANNEL, SPISPEED);
 		log("Wiringpispisetup is " + fd);
 
 		if (fd <= -1) {
 			log("SPI Setup failed!");
+			log("fd is " + fd);
 			throw new RuntimeException("SPI Setup failed!");
 		}
 		Gpio.pinMode(_cs, OUTPUT);
