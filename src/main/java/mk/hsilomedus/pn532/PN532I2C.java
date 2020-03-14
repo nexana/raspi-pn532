@@ -1,14 +1,14 @@
 
 package mk.hsilomedus.pn532;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import com.pi4j.io.i2c.I2CBus;
 import com.pi4j.io.i2c.I2CDevice;
 import com.pi4j.io.i2c.I2CFactory;
 import com.pi4j.wiringpi.Gpio;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PN532I2C implements IPN532Interface {
 
