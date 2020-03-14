@@ -18,7 +18,7 @@ public class PN532Spi implements IPN532Interface {
 	static final int LOW = 0;
 	static final int HIGH = 1;
 
-	static final int _cs = 18;
+	static final int _cs = 10;
 	static final int rst = 0;
 	
 	private byte command;
@@ -48,6 +48,8 @@ public class PN532Spi implements IPN532Interface {
 		Gpio.digitalWrite(_cs, HIGH);
 		Gpio.digitalWrite(rst, HIGH);
 		Gpio.digitalWrite(_cs, LOW);
+		log("SPI wakup finished.");
+
 	}
 
 	@Override
