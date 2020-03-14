@@ -219,6 +219,8 @@ public class PN532Spi implements IPN532Interface {
 		Gpio.delay(2);
 		writeByte(PN532_SPI_STATREAD);
 		status = readByte();
+		log("status" + status);
+
 		Gpio.digitalWrite(_cs, HIGH);
 		return status;
 	}
