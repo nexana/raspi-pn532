@@ -15,7 +15,7 @@ public class PN532I2C implements IPN532Interface {
   private I2CBus i2cBus;
   private I2CDevice i2cDevice;
   boolean debug = true;
-  boolean debugReads = true;
+  boolean debugReads = false;
 
   private byte command;
 
